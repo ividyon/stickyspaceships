@@ -1,0 +1,3 @@
+get normals of all sides of module polygon
+get normal of ship line closest to pointer
+get side of module where opposite of normal is closest to normal of selected ship line

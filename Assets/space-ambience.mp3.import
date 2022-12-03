@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/space-ambience.mp3-b60df0a79272967ad104c7621f73c8d4.mp3str"
+
+[deps]
+
+source_file="res://Assets/space-ambience.mp3"
+dest_files=[ "res://.import/space-ambience.mp3-b60df0a79272967ad104c7621f73c8d4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ufo-ambience.mp3-fd20d9dcfb34b555a1fe293000f4fc41.mp3str"
+
+[deps]
+
+source_file="res://Assets/ufo-ambience.mp3"
+dest_files=[ "res://.import/ufo-ambience.mp3-fd20d9dcfb34b555a1fe293000f4fc41.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Entities/Ship/PlayerShip/PlayerShip.gd" type="Script" id=1]
+[ext_resource path="res://Entities/Ship/Ship.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/ufo-ambience.mp3" type="AudioStream" id=3]
+[ext_resource path="res://Entities/Modules/Bridge/PlayerBridge.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/thump.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Entities/Modules/Body/BasicBody.tscn" type="PackedScene" id=6]
+
+[node name="PlayerShip" instance=ExtResource( 2 )]
+contacts_reported = 1
+contact_monitor = true
+script = ExtResource( 1 )
+
+[node name="PlayerBridge" parent="InitialModules" index="0" instance=ExtResource( 4 )]
+position = Vector2( 64, 0 )
+
+[node name="BasicBody" parent="InitialModules" index="1" instance=ExtResource( 6 )]
+
+[node name="UFOHum" type="AudioStreamPlayer2D" parent="." index="3"]
+stream = ExtResource( 3 )
+volume_db = -24.558
+autoplay = true
+
+[node name="CrashSound" type="AudioStreamPlayer2D" parent="." index="4"]
+stream = ExtResource( 5 )
+volume_db = 3.577
+
+[connection signal="body_entered" from="." to="." method="_on_collision"]
